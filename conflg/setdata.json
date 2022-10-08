@@ -1,0 +1,98 @@
+
+{
+    "behavior_alarm_type": [
+        {
+          "value": "1",
+          "text": "打架"
+        },
+        {
+          "value": "2",
+          "text": "抽烟"
+        },
+        {
+          "value": "3",
+          "text": "打电话"
+        },
+        {
+          "value": "4",
+          "text": "人员聚集"
+        },
+        {
+          "value": "5",
+          "text": "人员跌倒"
+        },
+        {
+          "value": "6",
+          "text": "区域入侵"
+        },
+        {
+          "value": "7",
+          "text": "区域徘徊"
+        },
+        {
+          "value": "99",
+          "text": "陌生人"
+        }
+      ],
+    "attendance_type": [
+       {
+         "value": "1",
+         "text": "迟到"
+       },
+       {
+         "value": "2",
+         "text": "缺勤"
+       },
+       {
+         "value": "3",
+         "text": "正常"
+       }
+     ],
+    "visitors_type": [
+       {
+         "value": "1",
+         "text": "已通过"
+       },
+       {
+         "value": "-1",
+         "text": "待审批"
+       },
+       {
+         "value": "2",
+         "text": "已拒绝"
+       }
+     ],
+    "health_code": [
+       {
+         "value": "01",
+         "text": "绿码"
+       },
+       {
+         "value": "11",
+         "text": "黄码"
+       },
+       {
+         "value": "21",
+         "text": "暂无用处"
+       },
+       {
+         "value": "31",
+         "text": "红码"
+       },
+       {
+         "value": "51",
+         "text": "其它"
+       }
+     ],
+    "visit_type": [
+       {
+         "value": "1",
+         "text": "家长会"
+       },
+       {
+         "value": "2",
+         "text": "培训"
+       }
+     ],
+    
+}
