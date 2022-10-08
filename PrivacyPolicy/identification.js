@@ -9,7 +9,7 @@
   }
 
   let companyList = {
-    HomeOSVensi: "威士丹利智能科技有限公司",
+    ClockWidget: "",
   };
 
   let company = document.getElementsByClassName("company");
@@ -24,7 +24,7 @@
   }
 
   let phoneObj = {
-    HomeOSVensi: "0752-2166072",
+    ClockWidget: "",
   };
 
   let phones = document.getElementsByClassName("phone");
@@ -38,7 +38,7 @@
   }
 
   let appNameObj = {
-    HomeOSVensi: "威士丹利智能",
+    ClockWidget: "Clock Widget",
   };
 
   let appNames = document.getElementsByClassName("appName");
