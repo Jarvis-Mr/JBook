@@ -1,12 +1,12 @@
 <!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>/* copy from https://github.com/sindresorhus/github-markdown-css/ */
 
-html,body{background-color: #ffffff;}
+html,body{background-color: #2d2d2d;}
 
 .markdown-body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   line-height: 1.5;
-  color: #333333;
+  color: #cccccc;
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
   font-size: 16px;
   line-height: 1.5;
@@ -20,7 +20,7 @@ html,body{background-color: #ffffff;}
 }
 
 .markdown-body figure{margin:0;padding:0; display:table;}
-.markdown-body figure figcaption{font-size:92%; text-align:center; color:#09844f;}
+.markdown-body figure figcaption{font-size:92%; text-align:center; color:#999999;}
 
 .markdown-body .anchor {
   float: left;
@@ -39,7 +39,7 @@ html,body{background-color: #ffffff;}
 .markdown-body h4 .octicon-link,
 .markdown-body h5 .octicon-link,
 .markdown-body h6 .octicon-link {
-  color: #0595bf;
+  color: #66cccc;
   vertical-align: middle;
   visibility: hidden;
 }
@@ -72,7 +72,7 @@ html,body{background-color: #ffffff;}
   height: 16px;
   content: ' ';
   display: inline-block;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' fill='%230595bf' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'%3E%3C/path%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' fill='%2366cccc' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 
@@ -98,10 +98,10 @@ html,body{background-color: #ffffff;}
   font-weight: bolder;
 }
 .markdown-body strong{
-  color: #333333;
+  color: #f99157;
 }
 .markdown-body em{
-  color: #333333;
+  color: #ffcc66;
 }
 
 .markdown-body h1 {
@@ -151,10 +151,10 @@ html,body{background-color: #ffffff;}
 }
 
 .markdown-body a {
-  color: #0366dd;
+  color: #99cc99;
   text-decoration: none;
 }
-.markdown-body mjx-container[jax="SVG"] > svg a{fill:#0366dd;stroke: #0366dd;}
+.markdown-body mjx-container[jax="SVG"] > svg a{fill:#99cc99;stroke: #99cc99;}
 
 .markdown-body a:hover {
   text-decoration: underline;
@@ -193,10 +193,10 @@ html,body{background-color: #ffffff;}
   padding: 3px 5px;
   font: 12px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
   line-height: 12px;
-  color: #09844f;
+  color: #999999;
   vertical-align: middle;
-  background-color: #f8f8f8;
-  border: 1px solid #e2e2e2;
+  background-color: #333333;
+  border: 1px solid #494949;
   border-radius: 3px;
 }
 
@@ -338,14 +338,14 @@ html,body{background-color: #ffffff;}
   height: .25em;
   padding: 0;
   margin: 24px 0;
-  background-color: #e2e2e2;
+  background-color: #494949;
   border: 0;
 }
 
 .markdown-body blockquote {
   padding: 0 1em;
-  color: #636363;
-  border-left: .25em solid #bbbbbb;
+  color: #9b9b9b;
+  border-left: .25em solid #f2777a;
 }
 
 .markdown-body blockquote>:first-child {
@@ -375,33 +375,33 @@ html,body{background-color: #ffffff;}
 .markdown-body h1,
 .markdown-body h2 {
   padding-bottom: .3em;
-  border-bottom: 1px solid #e8e8e8;
-  color: #0595bf;
+  border-bottom: 1px solid #434343;
+  color: #66cccc;
 }
 
 .markdown-body h2 {
   font-size: 1.5em;
-  color: #0595bf;
+  color: #66cccc;
 }
 
 .markdown-body h3 {
   font-size: 1.25em;
-  color: #0595bf;
+  color: #66cccc;
 }
 
 .markdown-body h4 {
   font-size: 1em;
-  color: #0595bf;
+  color: #66cccc;
 }
 
 .markdown-body h5 {
   font-size: .875em;
-  color: #0595bf;
+  color: #66cccc;
 }
 
 .markdown-body h6 {
   font-size: .85em;
-  color: #0595bf;
+  color: #66cccc;
 }
 
 .markdown-body ol,
@@ -459,20 +459,20 @@ html,body{background-color: #ffffff;}
 .markdown-body table td,
 .markdown-body table th {
   padding: 6px 13px;
-  border: 1px solid #bababa;
+  border: 1px solid #717171;
 }
 
 .markdown-body table tr {
-  background-color: #ffffff;
-  border-top: 1px solid #bababa;
+  background-color: #2d2d2d;
+  border-top: 1px solid #717171;
 }
 
 .markdown-body table th {
-  background-color: #e8e8e8;
+  background-color: #434343;
 }
 
 .markdown-body table tr:nth-child(2n) {
-  background-color: #f9f9f9;
+  background-color: #323232;
 }
 
 .markdown-body img {
@@ -492,8 +492,8 @@ html,body{background-color: #ffffff;}
   padding: .2em .4em;
   margin: 0;
   font-size: 85%;
-  background-color: #f8f8f8;
-  color: #09844f;
+  background-color: #333333;
+  color: #999999;
   border-radius: 3px;
 }
 
@@ -526,7 +526,7 @@ html,body{background-color: #ffffff;}
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background-color: #f8f8f8;
+  background-color: #333333;
   border-radius: 3px;
 }
 
@@ -540,7 +540,7 @@ html,body{background-color: #ffffff;}
   word-wrap: normal;
   background-color: initial;
   border: 0;
-  color: #09844f;
+  color: #999999;
 }
 
 .markdown-body .task-list-item {
@@ -557,7 +557,7 @@ html,body{background-color: #ffffff;}
 }
 .markdown-body section.footnotes{
     margin-top:48px;
-    border-top:solid 1px #e2e2e2;
+    border-top:solid 1px #494949;
     padding-top:0px;
 }
 
@@ -610,7 +610,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-    background-color: #f8f8f8;
+    background-color: #333333;
 }
 
 /* Inline code */
@@ -624,11 +624,11 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-    color: #008327;
+    color: #48be66;
 }
 
 .token.punctuation {
-    color: #2834ce;
+    color: #8b86c9;
 }
 
 .token.namespace {
@@ -642,7 +642,7 @@ pre[class*="language-"] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-    color: #2834ce;
+    color: #8b86c9;
 }
 
 .token.selector,
@@ -651,7 +651,7 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-    color: #d32d26;
+    color: #e6424b;
 }
 
 .token.operator,
@@ -665,18 +665,18 @@ pre[class*="language-"] {
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-    color: #bc319c;
+    color: #c33795;
 }
 
 .token.function,
 .token.class-name {
-    color: #967d41;
+    color: #67878e;
 }
 
 .token.regex,
 .token.important,
 .token.variable {
-    color: #784830;
+    color: #d38e63;
 }
 
 .token.important,
@@ -711,7 +711,7 @@ pre[class*="language-"].line-numbers > code {
   left: -3.8em;
   width: 3em; /* works for line-numbers below 1000 lines */
   letter-spacing: -1px;
-  border-right: 1px solid #c0c0c0;
+  border-right: 1px solid #6b6b6b;
 
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -727,7 +727,7 @@ pre[class*="language-"].line-numbers > code {
 
     .line-numbers-rows > span:before {
       content: counter(linenumber);
-      color: #c0c0c0;
+      color: #6b6b6b;
       display: block;
       padding-right: 0.8em;
       text-align: right;
@@ -788,8 +788,9 @@ body{ box-sizing: border-box;
 <p>当您使用「时钟大师」及相关服务时，为了保障软件与服务的正常运行，我们会收集您的硬件型号、操作系统版本号、国际移动设备识别码（IMEI）、网络设备硬件地址（MAC）、IP地址、软件版本号、网络接入方式及类型、操作日志等信息。请您了解，这些信息是我们提供服务和保障产品正常运行所必须收集的基本信息。</p>
 <p><strong>2. 您在使用服务时上传或提供的信息</strong></p>
 <p>当您使用「时钟大师」的订阅服务、反馈意见服务时，我们会根据实际情况收集各种信息，例如您的订阅信息、反馈意见时填写的邮箱信息。我们将使用这些信息来满足您的要求，提供相关的产品或服务，或实现反欺诈的目的。</p>
-<p><strong>3. 为您提供添加时钟小组件/订制小组件服务</strong></p>
-<p>“时钟小组件自定义背景”是「时钟大师」核心的功能之一。为实现这一功能，我们会请求您授权相机（摄像头）、照片权限。如果您拒绝授权提供某些服务必要权限，将无法使用相关的功能，但不影响您正常使用「时钟大师」的其他功能。</p>
+<!--**3. 为您提供添加时钟小组件/订制小组件服务**
+
+“时钟小组件自定义背景”是「时钟大师」核心的功能之一。为实现这一功能，我们会请求您授权相机（摄像头）、照片权限。如果您拒绝授权提供某些服务必要权限，将无法使用相关的功能，但不影响您正常使用「时钟大师」的其他功能。-->
 <h3><a id="%E5%85%B3%E4%BA%8E%E3%80%8C%E6%97%B6%E9%92%9F%E5%A4%A7%E5%B8%88%E3%80%8D%E7%94%B3%E8%AF%B7%E5%92%8C%E4%BD%BF%E7%94%A8%E7%9A%84%E6%9D%83%E9%99%90%EF%BC%8C%E8%AF%B7%E5%8F%82%E8%A7%81%E6%9C%AC%E6%96%87%E6%9C%AB%E9%99%84%E4%BB%B6%E4%B8%AD%E7%9A%84%E3%80%8A%E6%9D%83%E9%99%90%E7%94%B3%E8%AF%B7%E4%B8%8E%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5%E8%AF%B4%E6%98%8E%E3%80%8B" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>关于「时钟大师」申请和使用的权限，请参见本文末附件中的《权限申请与使用情况说明》</h3>
 <p><strong>4. 保障产品、服务及用户使用安全</strong></p>
 <p>为帮助我们更好地了解「时钟大师」及相关服务的运行情况，以便确保运行与提供服务的安全，我们会记录网络日志信息，以及使用软件及相关服务的频率、崩溃数据、总体安装、使用情况、性能数据等信息。</p>
@@ -892,7 +893,7 @@ body{ box-sizing: border-box;
 <p><strong>（二）删除</strong></p>
 <p>您可以在「时钟大师」中删除您的文件信息和其他数据。</p>
 <p><strong>（三）访问隐私政策</strong></p>
-<p>您可以在应用内进入“设置”-“相关条款”-“隐私政策”查看本隐私政策的全部内容。</p>
+<p>您可以在应用内进入“设置”-“隐私政策”查看本隐私政策的全部内容。</p>
 <p><strong>（四）停止运营向您告知权利</strong></p>
 <p>如我们停止运营，我们将及时停止收集您个人信息的活动，将停止运营的通知以逐一送达或公告的形式通知您，并对所持有的您的个人信息进行删除或匿名化处理。</p>
 <p><strong>六、 我们如何处理未成年人的个人信息</strong></p>
