@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://clock-d1a6e.web.app/ -->
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <title>Clock Cube</title>
+    <style>
+           .fixback
+           {
+               display: block;
+               width: 100%;
+               height: 100%;
+               line-height: 0px;
+               left: 0;
+               top: 0;
+               background-color: rgb(245,245,245);
+           }
+           .nametext{
+               text-align: center;
+               margin-left: auto;
+               margin-right: auto;
+               font-size: 18px;
+               font-weight: 600;
+               margin-top: 40px;
+               display: block;
+           }
+           .iconimg
+           {
+               display: block;
+               width: 110px;
+               height: 110px;
+               margin-left: auto;
+               margin-right: auto;
+               margin-top: 50px;
+               border-radius: 10px;
+           }
+           .downbtn
+           {
+               width: 280px;
+               height: 50px;
+               background-color: rgb(2,208,130);
+               text-align: center;
+               line-height: 50px;
+               margin-left: auto;
+               margin-right: auto;
+               border: hidden;
+               font-size: 16px;
+               color: white;
+               margin-top: 50px;
+               border-radius: 6px;
+           }
+           .context
+           {
+               display: block;
+               margin-left: auto;
+               margin-right: auto;
+               margin-top: 30px;
+               width: 280px;
+               line-height: 24px;
+               font-size: 15px;
+               font-weight: 600;
+               color: rgba(0,0,0,0.8);
+           }
+    </style><link type="text/css" rel="stylesheet" charset="UTF-8" href="./Flip Clock - digital widgets_files/translateelement.css"></head>
+
+    
+
+    <body style="text-align: center;background-color: rgb(245,245,245);">
+
+    <div class="fixback">
+
+        <img class="iconimg" src="https://p.ipic.vip/di1pni.png">
+
+        <label class="nametext">ScreenSmith</label>
+        <label class="nametext">Beautifully Theme/wallpaper</label>
+        
+        <label class="context" style="text-align: left;">
+            ScreenSmith is an application that provides multiple sets of exquisite themes, each theme has specially customized Icons and widgets,Come and customize your own mobile desktop!
+        </label>
+        
+        
+        <div>
+            
+            <!-- <ul class="context" style="text-align:left;white-space:normal;word-wrap:break-word;">
+                <li>Support almost all video formats: MP4,AVI,MKV,RMVB,FLV,WMV,3GP,WAV,MOV,SWF,MPEG,ASF,MTS,RM,VOB,M4V,M2TS ...</li>
+                <li>Audio formats: MP3,WMA,WAV,DTS,AAC,AMR,FLAC,M4A,AIFF,OGG ...</li>
+                <li>Import media files:</li>
+            </ul> -->
+            
+            <div class="context" style="text-align:left;white-space:normal;word-wrap:break-word;">
+            <p>widget style：</p>
+            <p>Patterned text for lock screen widgets</p>
+            <p>Beautiful pictures</p>
+            <p>Inspirational Copywriting Widget</p>
+            <p>Multi-style calendar widget</p>
+            <p>Multi-style clock widget</p>
+            <p>Quickly launch other apps through widgets</p>
+
+            <p>How to use：</p>
+            <p>Enter the theme in the APP, install the corresponding Icons, widgets, wallpapers</p>
+            
+            <p>Version requirements：</p>
+            <p>All clock widgets can run on iOS14 or later, and the text color and background color can be customized</p>
+            <!-- <p>更是支持桌面小组件透明效果：透明设置的方法：我的组件口袋->设置->透明组件设置</p> -->
+            <p>...</p>
+            </div>
+            
+            <!-- <ol class="context" style="text-align:left;">
+                <li>In other apps, use open in... to import files.</li>
+                <li>Import files from Files/iCloud Drive.</li>
+                <li>Import files from PC.</li>
+                <li>Import video files from the Photo Library.</li>
+            </ol> -->
+            
+        </div>
+        
+   
+          
+        <button class="downbtn" onclick="copyTXT()">Download</button>
+
+    </div>
+    
+    <p><strong>Contact Us</strong></p> <p>
+    contact me at clockcubefeedback@163.com</p>
+
+    
+    <script>
+
+        var copyDOM = document.querySelector('#copy-txt');
+        copyDOM.innerText = this.location.href;
+
+    function copyTXT(){
+        
+        window.location.href="https://itunes.apple.com/app/apple-store/id6443995614";
+        
+    var range = document.createRange(); // 创建容器
+    range.selectNode(copyDOM); // 选中需要复制的节点
+    window.getSelection().addRange(range); // 执行选中元素
+    var successful = document.execCommand('copy');// 执行 copy 操作
+    try {
+        var msg = successful ? 'successful' : 'unsuccessful';
+        console.log('Copy was ' + msg);
+    } catch(err) {
+        console.log('unable to copy');
+    }
+    window.getSelection().removeAllRanges(); // 移除选中的元素
+    
+    
+}
+
