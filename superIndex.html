@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<head>
+  <title>一条咸鱼技术分享</title>
+  <style>
+    .tab {
+      display: flex;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+    
+    .tab button {
+      background-color: inherit;
+      color: black;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding: 14px 30px;
+      border-radius: 20px;
+      height: 40px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .tab button:hover {
+      background-color: #ddd;
+    }
+    
+    .tab button.active {
+      background-color: #ccc;
+    }
+    
+    .tabcontent {
+      display: none;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .fixback
+    {
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 0px;
+        left: 0;
+        top: 0;
+        background-color: rgb(245,245,245);
+    }
+    .nametext{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 40px;
+        display: block;
+    }
+    .iconimg
+    {
+        display: block;
+        width: 110px;
+        height: 110px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        border-radius: 10px;
+    }
+    .downbtn
+    {
+        width: 280px;
+        height: 50px;
+        background-color: rgb(2,208,130);
+        text-align: center;
+        line-height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        border: hidden;
+        font-size: 16px;
+        color: white;
+        border-radius: 25px;
+        margin-top: 50px;
+    }
+    .context
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 30px;
+        width: 350px;
+        line-height: 24px;
+        font-size: 15px;
+        font-weight: 600;
+        color: rgba(0,0,0,0.8);
+    }
+  </style>
+  <script>
+
+    var copyDOM = document.querySelector('#copy-txt');
+      copyDOM.innerText = this.location.href;
+
+    function copyTXT(appId){
+      
+        window.location.href="https://itunes.apple.com/app/apple-store/id" + appId;
+      
+        var range = document.createRange(); // 创建容器
+        range.selectNode(copyDOM); // 选中需要复制的节点
+        window.getSelection().addRange(range); // 执行选中元素
+        var successful = document.execCommand('copy');// 执行 copy 操作
+        try {
+          var msg = successful ? 'successful' : 'unsuccessful';
+          console.log('Copy was ' + msg);
+        } catch(err) {
+        console.log('unable to copy');
+      }
+      window.getSelection().removeAllRanges(); // 移除选中的元素
+    }
+
+    /// 切换tab
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      
+      // 隐藏所有的tab内容
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      
+      // 移除所有tab按钮的active类
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      
+      // 显示当前选中tab的内容，并将按钮设置为active状态
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+      
+    }
+  </script>
+</head>
+<body style="text-align: center;background-color: rgb(245,245,245);">
+   <!-- 头部视图 -->
+  <div style="display: table; width: 100%;">
+    <div style="display: table-cell; vertical-align: middle; height: 150px; background: linear-gradient(rgb(241, 189, 238), rgb(178, 188, 242)); align-content: center;">
+      <div style="margin: auto; font-size: 18px; font-weight: bold;">一只咸鱼技术分享 </div>
+    </div>
+  </div>
+  
+
+  <!-- tab控件 -->
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'product1')">鼓机</button>
+    <button class="tablinks" onclick="openTab(event, 'product2')">应用锁</button>
+  </div>
+  
+  <!-- Tab下的item内容 -->
+  <div id="product1" class="tabcontent">
+    <div class="fixback">
+
+      <img class="iconimg" src="https://p.ipic.vip/m4zr9y.png">
+
+      <label class="nametext">鼓机</label>
+      <label class="nametext">随时随地创作</label>
+      
+      <label class="context" style="text-align: left;">
+          鼓机时一款支持多种音乐风格的鼓声，可以随时随地创作音乐；
+      </label>
+      
+      
+      <div>
+          <div class="context" style="text-align:left;white-space:normal;word-wrap:break-word;">
+          <p>鼓机和编曲</p>
+          <p>音乐风格有：流行，朋克，RNB，摇滚，布鲁斯，放克，嘻哈，爵士乐，金属，乡村，民谣</p>
+          <p>鼓组的类型有：标准1，标准2，Room， Power，Electronic,Jazz,Brush,Power Drums</p>
+          <p>支持音乐创作</p>
+          <p></p>
+          <p>...</p>
+          </div>
+        
+      </div>
+      
+      
+        
+      <button class="downbtn" onclick="copyTXT('6698852102')">App Store</button>
+      </div>
+  </div>
+  
+  <div id="product2" class="tabcontent">
+      <div class="fixback">
+
+      <img class="iconimg" src="https://p.ipic.vip/ajh1fk.png">
+
+      <label class="nametext">应用锁</label>
+      <label class="nametext">家长控制：加密程序APP，安全上锁</label>
+      
+      <label class="context" style="text-align: left;">
+          不管你愿不愿意，电子设备已经随着疫情变成了孩子们必不可少的工具。在家带娃更是已无法离开电子产品，电子设备就是生产力，但不等于家长就可以全权放手。
+      </label>
+      
+      
+      <div>
+          <div class="context" style="text-align:left;white-space:normal;word-wrap:break-word;">
+          <p>我们的功能：</p>
+          <p>*应用限制：阻止孩子使用社交媒体和游戏等特定应用程序的功能</p>
+          <p>*密码保护：对受限APP设置密码保护</p>
+          <p>*禁止安装程序：防止AppStore安装新的应用程序</p>
+          <p>*禁止删除程序：防止误删应用程序，避免丢失珍贵的聊天记录</p>
+          <p>*禁止应用内购买：防止应用程序付款，产生额外的费用</p>
+          <p>*限时保护：设置屏幕使用时间限额</p>
+          <p>*家人远程管控：孩子可以拥有自己独立的账号，家长可以随时知道孩子设备的使用情况。</p>
+          <p>...</p>
+          </div>
+        
+      </div>
+      
+      
+        
+      <button class="downbtn" onclick="copyTXT('6698866552')">App Store</button>
+      </div>
+  </div>
+  <div style="display: table; width: 100%;">
+    <div style="display: table-cell; vertical-align: middle; height: 120px; background: linear-gradient(rgb(249, 224, 228),rgb(210, 210, 251)); align-content: center;">
+      <div style="margin: auto; font-size: 14px; font-weight: bold; color: gray;">
+        <p><strong>Contact Us</strong></p> 
+        <p>联系我: clockcubefeedback@163.com</p>
+       <!-- <p>备案号码: 待备案</p> -->
+      </div>
+    </div>
+  </div>
+  <script>
+    // 默认显示第一个tab
+    document.getElementById("product1").style.display = "block";
+    document.getElementsByClassName("tablinks")[0].className += " active";
+  </script>
+</body>
+</html>
